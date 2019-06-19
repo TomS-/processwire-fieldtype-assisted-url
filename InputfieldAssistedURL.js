@@ -15,8 +15,8 @@ $(document).ready(function() {
         var modalUrl = config.urls.admin + 'page/link/?id=' + pageID + '&modal=1';
 
         // labels
-        var insertLinkLabel = 'Choose URL';
-        var cancelLabel = 'Cancel';
+        var insertLinkLabel = ProcessWire.config.InputfieldCKEditor.pwlink.label;
+        var cancelLabel = ProcessWire.config.InputfieldCKEditor.pwlink.cancel;
         var $iframe; // set after modalSettings down
 
         // action when insert link button is clicked
